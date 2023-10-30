@@ -58,7 +58,7 @@ async function run() {
       const spinner = createSpinner('开始下载...').start()
       //下载git代码
       const dl_url = `direct:https://gitee.com/fxzer/${answers.template}`
-      download(`${dl_url}#master`, answers.dirname, function (err) {
+      download(`${dl_url}#main`, answers.dirname, function (err) {
         if (err) {
           spinner.error({ text: `下载异常：${err.message}` })
         } else {
