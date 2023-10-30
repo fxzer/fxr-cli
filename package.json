@@ -1,0 +1,33 @@
+{
+  "name": "fxzer-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a custom cli",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "release": "bumpp -a"
+  },
+  "bin": {
+    "fxzer-cli": "index.js"
+  },
+  "keywords": ["cli","vue3","nuxt3"],
+  "author": "fxzer",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.1.1",
+    "gitee-repo": "^0.0.2",
+    "inquirer": "^9.2.11",
+    "nanospinner": "^1.1.0",
+    "obtain-git-repo": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fxzer/fxzer-cli"
+},
+  "devDependencies": {
+    "bumpp": "^9.2.0"
+  }
+}
