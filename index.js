@@ -21,7 +21,7 @@ function emptyDir(dir) {
   fs.rmSync(dir, { recursive: true, force: true })
 }
 async function run() {
-  figlet('er-cli', {
+  figlet('fxrcli', {
     font: "Isometric3",
     horizontalLayout: "default",
     verticalLayout: "default",
@@ -37,7 +37,7 @@ async function run() {
         type: 'input',
         message: '请输入项目名：',
         default() {
-          return 'ercli-starter'
+          return 'fxrcli-starter'
         },
       },
       {
